@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonsive html</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        /* header */
+        header {
+            background-color: cadetblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 550px;
+            background: steelblue;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        main { 
+            padding : 5px;
+        }
+
+        section::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        article {
+            float: left;
+            padding : 20px;
+            width: 70%;
+            height: 300px;
+        }
+
+        aside {
+            padding: 5px;
+            float: right;
+            width: 50%;
+            font-style: italic;
+            background: lightcyan;
+        }
+
+        footer {
+            background-color: tan;
+            padding : 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: inline-block;
+            }
+            nav, main {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h3>Creative Web</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <main>
+            <article>
+                <h1>Hello</h1>
+                <aside>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid earum voluptatem consequatur illo autem non quibusdam iusto, illum veritatis quia enim eveniet vitae excepturi quo vel facilis libero quos.
+                    </p>
+                </aside>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nostrum eaque porro quibusdam distinctio iusto saepe, unde ullam dolorem. Atque suscipit earum expedita assumenda magni molestias accusantium error quos repellendus ullam reiciendis fugit doloremque ipsa cupiditate vitae perferendis quibusdam dolore enim explicabo sapiente, non consequatur? Commodi veniam nemo hic sint!
+                </p>
+            </article>
+        </main>
+    </section>
+
+    <footer>
+        Copyright &copy; by All 2020
+    </footer>
+</body>
+</html>
